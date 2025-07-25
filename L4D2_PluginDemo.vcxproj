@@ -98,7 +98,8 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)hl2sdk-l4d2\public;$(ProjectDir)hl2sdk-l4d2\public\tier0;$(ProjectDir)hl2sdk-l4d2\public\tier1;$(ProjectDir)hl2sdk-l4d2\public\tier2;$(ProjectDir)hl2sdk-l4d2\public\tier3;$(ProjectDir)hl2sdk-l4d2\game;$(ProjectDir)hl2sdk-l4d2\game\sever;$(ProjectDir)hl2sdk-l4d2\game\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)hl2sdk-l4d2\public;$(ProjectDir)hl2sdk-l4d2\public\tier0;$(ProjectDir)hl2sdk-l4d2\public\tier1;$(ProjectDir)hl2sdk-l4d2\public\tier2;$(ProjectDir)hl2sdk-l4d2\public\tier3;$(ProjectDir)hl2sdk-l4d2\game;$(ProjectDir)hl2sdk-l4d2\game\server;$(ProjectDir)hl2sdk-l4d2\game\client;$(ProjectDir)hl2sdk-l4d2\game\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

@@ -38,9 +38,9 @@
 
 // Interfaces from the engine
 IVEngineServer* engine = NULL; // helper functions (messaging clients, loading content, making entities, running commands, etc)
-IGameEventManager2* gameeventmanager = NULL; // game events interface
+IGameEventManager2* gameeventmanager_ = NULL; // game events interface
 #ifndef GAME_DLL
-//#define gameeventmanager gameeventmanager_
+#define gameeventmanager gameeventmanager_
 #endif
 IPlayerInfoManager* playerinfomanager = NULL; // game dll interface to interact with players
 //IEntityInfoManager* entityinfomanager = NULL; // game dll interface to interact with all entities (like IPlayerInfo)

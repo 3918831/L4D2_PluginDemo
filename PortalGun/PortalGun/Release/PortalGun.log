@@ -1,0 +1,53 @@
+﻿生成启动时间为 2025/7/28 2:15:40。
+日志记录详细程度设置为: Normal。     1>项目“G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalGun\PortalGun\PortalGun.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (PortalGun.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>InitializeBuildStatus:
+         正在对“Release\PortalGun_Server.tlog\unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\tier0" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\tier1" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\tier2" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\tier3" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\game" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\game\server" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\game\server\hl2" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\game\shared" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\common" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalSDK\public" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalSDK\game\server" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalSDK\game\server\portal" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalSDK\game\server\hl2" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalSDK\game\shared" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalSDK\game\shared\portal" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalSDK\game\shared\hl2" /I"G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalSDK\game\shared\Multiplayer" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WIN32 /D NDEBUG /D L4D2PLUGINDEMO_EXPORTS /D _WINDOWS /D _USRDLL /D GAME_DLL /D PORTAL /D HL2_DLL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /wd4819 /analyze- /errorReport:prompt "..\..\hl2sdk-l4d2\game\server\gameinterface.cpp" "..\..\hl2sdk-l4d2\game\server\physics.cpp" "..\..\hl2sdk-l4d2\game\shared\physics_shared.cpp" ..\..\PortalSDK\game\server\portal\PortalSimulation.cpp
+         gameinterface.cpp
+     1>..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(1169): error C2039: “PEntityOfEntIndex”: 不是“IVEngineServer”的成员
+                 G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\eiface.h(87) : 参见“IVEngineServer”的声明
+     1>..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(2023): error C2259: “CServerGameEnts”: 不能实例化抽象类
+                 由于下列成员: 
+                 “void IServerGameEnts::PrepareForFullUpdate(edict_t *)”: 是抽象的
+                 G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\eiface.h(600) : 参见“IServerGameEnts::PrepareForFullUpdate”的声明
+     1>..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(2093): error C2039: “PEntityOfEntIndex”: 不是“IVEngineServer”的成员
+                 G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\eiface.h(87) : 参见“IVEngineServer”的声明
+     1>..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(2279): error C2259: “CServerGameClients”: 不能实例化抽象类
+                 由于下列成员: 
+                 “void IServerGameClients::ClientVoice(edict_t *)”: 是抽象的
+                 G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\eiface.h(661) : 参见“IServerGameClients::ClientVoice”的声明
+                 “int IServerGameClients::GetMaxSplitscreenPlayers(void)”: 是抽象的
+                 G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\eiface.h(667) : 参见“IServerGameClients::GetMaxSplitscreenPlayers”的声明
+                 “int IServerGameClients::GetMaxHumanPlayers(void)”: 是抽象的
+                 G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\eiface.h(670) : 参见“IServerGameClients::GetMaxHumanPlayers”的声明
+                 “void IServerGameClients::ClientCommandKeyValues(edict_t *,KeyValues *)”: 是抽象的
+                 G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\hl2sdk-l4d2\public\eiface.h(673) : 参见“IServerGameClients::ClientCommandKeyValues”的声明
+     1>..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(2834): error C2660: “IVEngineServer::UserMessageBegin”: 函数不接受 2 个参数
+         physics.cpp
+         physics_shared.cpp
+         PortalSimulation.cpp
+     1>..\..\PortalSDK\game\server\portal\PortalSimulation.cpp(2897): error C3861: “IncrementInterpolationFrame”:  找不到标识符
+     1>已完成生成项目“G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalGun\PortalGun\PortalGun.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+       “G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalGun\PortalGun\PortalGun.vcxproj”(Build 目标) (1) ->
+       (PrepareForBuild 目标) -> 
+         C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (PortalGun.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+
+
+       “G:\Code_Project\Visual Studio 2022 Project\L4D2_PluginDemo\Github\L4D2_PluginDemo\PortalGun\PortalGun\PortalGun.vcxproj”(Build 目标) (1) ->
+       (ClCompile 目标) -> 
+         ..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(1169): error C2039: “PEntityOfEntIndex”: 不是“IVEngineServer”的成员
+         ..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(2023): error C2259: “CServerGameEnts”: 不能实例化抽象类
+         ..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(2093): error C2039: “PEntityOfEntIndex”: 不是“IVEngineServer”的成员
+         ..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(2279): error C2259: “CServerGameClients”: 不能实例化抽象类
+         ..\..\hl2sdk-l4d2\game\server\gameinterface.cpp(2834): error C2660: “IVEngineServer::UserMessageBegin”: 函数不接受 2 个参数
+         ..\..\PortalSDK\game\server\portal\PortalSimulation.cpp(2897): error C3861: “IncrementInterpolationFrame”:  找不到标识符
+
+    1 个警告
+    6 个错误
+
+已用时间 00:00:01.90

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Portal">
+      <UniqueIdentifier>{a3f7f776-f5b8-4c32-9449-644fd60373ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Portal\Weapons">
+      <UniqueIdentifier>{730b0a44-00f0-466d-9220-3c2108a3868f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\hl2sdk-l4d2">
+      <UniqueIdentifier>{a7d0df06-09ad-434f-8145-0ad23b06e0dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Portal\game">
+      <UniqueIdentifier>{d622640d-1625-463f-9237-23879b2ec2cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Portal\game\shared">
+      <UniqueIdentifier>{a4d2b71c-8df4-4fc2-b90c-ae93be5bd4ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\hl2sdk-l4d2\game">
+      <UniqueIdentifier>{ad189844-4665-46dc-aa9f-ca81625a03ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\hl2sdk-l4d2\game\server">
+      <UniqueIdentifier>{c356e3f2-ecee-4d5f-92d3-e585001b9dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\hl2sdk-l4d2\game\shared">
+      <UniqueIdentifier>{9d22477f-f798-4237-b6c5-8ce3abc04bee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\hl2sdk-l4d2\public">
+      <UniqueIdentifier>{3ea4ec80-1af9-4021-b4f8-17430d40eb3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Portal\game\server">
+      <UniqueIdentifier>{4d53c199-483b-4e72-b7af-91138a8e1c2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="weapon_portalgun_l4d2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="demo_weapon.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\PortalSimulation.h">
+      <Filter>源文件\Portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\shared\portal\portal_util_shared.h">
+      <Filter>源文件\Portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_physics_collisionevent.h">
+      <Filter>源文件\Portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\public\bone_setup.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\gameinterface.h">
+      <Filter>源文件\hl2sdk-l4d2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\basecombatweapon_shared.h">
+      <Filter>源文件\hl2sdk-l4d2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\shared\movevars_shared.h">
+      <Filter>源文件\Portal\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\physics.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\physics_shared.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\public\studio.h">
+      <Filter>源文件\hl2sdk-l4d2\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_physcannon.h">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_portalbase.h">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_portalbasecombatweapon.h">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_portalgun.h">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_portalgun_shared.h">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="demo_weapon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\PortalSimulation.cpp">
+      <Filter>源文件\Portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\shared\portal\portal_util_shared.cpp">
+      <Filter>源文件\Portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_physics_collisionevent.cpp">
+      <Filter>源文件\Portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\public\bone_setup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\gameinterface.cpp">
+      <Filter>源文件\hl2sdk-l4d2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\basecombatweapon_shared.cpp">
+      <Filter>源文件\hl2sdk-l4d2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\shared\movevars_shared.cpp">
+      <Filter>源文件\Portal\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\physics.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\physics_shared.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\public\studio.cpp">
+      <Filter>源文件\hl2sdk-l4d2\public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_physcannon.cpp">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_portalbase.cpp">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_portalbasecombatweapon.cpp">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_portalgun.cpp">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_portalgun_shared.cpp">
+      <Filter>源文件\Portal\Weapons</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -62,6 +62,7 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="L4D2_Plugins.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -98,8 +99,8 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)hl2sdk-l4d2\public;$(ProjectDir)hl2sdk-l4d2\public\tier0;$(ProjectDir)hl2sdk-l4d2\public\tier1;$(ProjectDir)hl2sdk-l4d2\public\tier2;$(ProjectDir)hl2sdk-l4d2\public\tier3;$(ProjectDir)hl2sdk-l4d2\game;$(ProjectDir)hl2sdk-l4d2\game\server;$(ProjectDir)hl2sdk-l4d2\game\client;$(ProjectDir)hl2sdk-l4d2\game\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)hl2sdk-l4d2\public;$(SolutionDir)hl2sdk-l4d2\public\tier0;$(SolutionDir)hl2sdk-l4d2\public\tier1;$(SolutionDir)hl2sdk-l4d2\public\tier2;$(SolutionDir)hl2sdk-l4d2\public\tier3;$(SolutionDir)hl2sdk-l4d2\game;$(SolutionDir)hl2sdk-l4d2\game\server;$(SolutionDir)hl2sdk-l4d2\game\shared;$(SolutionDir)hl2sdk-l4d2\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -107,7 +108,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>$(ProjectDir)hl2sdk-l4d2\lib\public;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)hl2sdk-l4d2\lib\public;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>mathlib.lib;tier0.lib;tier1.lib;tier2.lib;tier3.lib;vstdlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>libcmt.lib;libcd;libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>

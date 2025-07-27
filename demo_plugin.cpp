@@ -49,7 +49,7 @@ IBotManager* botmanager = NULL; // game dll interface to interact with bots
 IServerPluginHelpers* helpers = NULL; // special 3rd party plugin helpers from the engine
 IUniformRandomStream* randomStr = NULL;
 IEngineTrace* enginetrace = NULL;
-
+IServerGameDLL* servergamedll = NULL;
 
 CGlobalVars* gpGlobals = NULL;
 
@@ -202,7 +202,14 @@ bool CEmptyServerPlugin::Load(CreateInterfaceFn interfaceFactory, CreateInterfac
 	{
 		gpGlobals = playerinfomanager->GetGlobalVars();
         Msg("gpGlobals found at %d\n", gpGlobals);
+	}
 
+	servergamedll = (IServerGameDLL*)gameServerFactory(INTERFACEVERSION_SERVERGAMEDLL, NULL);
+	if (!servergamedll) {
+		Warning("servergamedll through gameServerFactory is null\n");
+	}
+	else {
+		Msg("IServerGameDLL::servergamedll found at %d\n", servergamedll);
 	}
 
 	MathLib_Init(2.2f, 2.2f, 0.0f, 2.0f);
@@ -943,6 +950,15 @@ void CEmptyServerPlugin::FireGameEvent(IGameEvent* event)
     if (FStrEq(name, "player_jump"))
     {
         Msg("GetEntityCount: %d\n", engine->GetEntityCount());
+		if (engine->GetTimescale() == 1.0) {
+			engine->SetTimescale(0.5);
+			Warning("CEmptyServerPlugin::FireGameEvent: engine->OBSOLETE_Time: \"%f\"\n", engine->OBSOLETE_Time());
+			servergamedll->ServerHibernationUpdate(false);
+		} else {
+			engine->SetTimescale(1.0);
+			servergamedll->ServerHibernationUpdate(true);
+		}
+		
     }
 }
 

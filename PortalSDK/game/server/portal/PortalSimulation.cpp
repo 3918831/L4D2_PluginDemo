@@ -2894,7 +2894,7 @@ void CPSCollisionEntity::Spawn( void )
 	VPhysicsSetObject( NULL );
 	AddFlag( FL_WORLDBRUSH );
 	AddEffects( EF_NODRAW | EF_NOSHADOW | EF_NORECEIVESHADOW );
-	IncrementInterpolationFrame();
+	//IncrementInterpolationFrame();
 }
 
 void CPSCollisionEntity::Activate( void )

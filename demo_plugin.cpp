@@ -953,10 +953,10 @@ void CEmptyServerPlugin::FireGameEvent(IGameEvent* event)
 		if (engine->GetTimescale() == 1.0) {
 			engine->SetTimescale(0.5);
 			Warning("CEmptyServerPlugin::FireGameEvent: engine->OBSOLETE_Time: \"%f\"\n", engine->OBSOLETE_Time());
-			servergamedll->ServerHibernationUpdate(false);
+			//servergamedll->ServerHibernationUpdate(false);
 		} else {
 			engine->SetTimescale(1.0);
-			servergamedll->ServerHibernationUpdate(true);
+			//servergamedll->ServerHibernationUpdate(true);
 		}
 		
     }

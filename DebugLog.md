@@ -10,4 +10,12 @@
 8. movevars_shared.cpp：L4D2SDK中缺少GetCurrentGravity函数，并且在使用两套sdk的情况下，编译阶段一旦包含L4D2的SDK后宏将起作用，便不会再重复包含PortalSDK的同名文件；
 9. CSteamAPIContext类（src\public\steam\steam_api.h）的实现通过宏VERSION_SAFE_STEAM_API_INTERFACES隔离，但是调用和定义并没有隔离，造成编译找不到符号，此处L4D2SDK和PortalSDK两个文件是线上亦有差距。适配上选择通过相同的宏VERSION_SAFE_STEAM_API_INTERFACES隔离所有调用
 10. CServerGameDLL对纯虚基类IServerGameDLL的实现不全，导致无法实例化对象，尝试拿IServerGameDLL的接口调用了没有覆写的方法ServerHibernationUpdate，确实可以调用，所以要对CServerGameDLL改造以实现基类的纯虚接口，所在文件在src\game\server\gameinterface.h
-IVEngineServer基类的方法PEntityOfEntIndex已经被移除，参考：https://wiki.alliedmods.net/Porting_to_Left_4_Dead
+11. IVEngineServer基类的方法PEntityOfEntIndex已经被移除，参考：https://wiki.alliedmods.net/Porting_to_Left_4_Dead
+
+## 2025.7.29:
+12. 在src\game\server\gameinterface.cpp中，CServerGameDLL::PreClientUpdate函数中PEntityOfEntIndex语句注释（CServerGameDLL::PreClientUpdate绘制hitbox,PEntityOfEntIndex在L4D2已经废弃,先不要了）
+12. 在src\game\server\gameinterface.cpp中，CServerGameEnts::CheckTransmit函数中PEntityOfEntIndex已被等价替代
+13. CServerGameEnts没有覆写IServerGameEnts的PrepareForFullUpdate方法, github上这个方法也有一些空实现,暂且增加一个空实现
+14. IServerGameClients类四个纯虚接口缺少实现:ClientVoice、GetMaxSplitscreenPlayers、GetMaxHumanPlayers、ClientCommandKeyValues，分别生成空实现或者默认返回
+15. src\game\server\portal\PortalSimulation.cpp中CPSCollisionEntity::Spawn存在对IncrementInterpolationFrame的调用, 暂且注释
+16. src\game\server\gameinterface.cpp::UserMessageBegin方法缺少一个参数,已修复

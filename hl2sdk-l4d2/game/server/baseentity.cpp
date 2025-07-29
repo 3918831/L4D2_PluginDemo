@@ -6098,7 +6098,11 @@ void CBaseEntity::ModifyOrAppendCriteria( AI_CriteriaSet& set )
 	}
 
 	// Append anything from world I/O/keyvalues with "world" as prefix
-	CWorld *world = dynamic_cast< CWorld * >( CBaseEntity::Instance( engine->PEntityOfEntIndex( 0 ) ) );
+	// 2025.7.29: 没有PEntityOfEntIndex函数,详见https://wiki.alliedmods.net/Porting_to_Left_4_Dead
+	// CWorld *world = dynamic_cast< CWorld * >( CBaseEntity::Instance( engine->PEntityOfEntIndex( 0 ) ) );
+
+	// 2025.7.29: CBaseEntity::Instance存在多个重载，其中支持通过int iEnt方式查找实体,返回值均为CBaseEntity*，故修改
+	CWorld* world = dynamic_cast<CWorld*>(CBaseEntity::Instance(0));
 	if ( world )
 	{
 		world->AppendContextToCriteria( set, "world" );

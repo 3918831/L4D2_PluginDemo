@@ -1746,7 +1746,7 @@ void CProp_Portal::ForceEntityToFitInPortalWall( CBaseEntity *pEntity )
 		{
 			Vector ptNewPos = ShortestTrace.endpos + vEntityCenterToOrigin;
 			pEntity->Teleport( &ptNewPos, NULL, NULL );
-			pEntity->IncrementInterpolationFrame();
+			//pEntity->IncrementInterpolationFrame();
 #if !defined ( DISABLE_DEBUG_HISTORY )
 			if ( !IsMarkedForDeletion() )
 			{

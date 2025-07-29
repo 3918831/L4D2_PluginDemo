@@ -77,14 +77,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\baseanimating.h" />
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\basecombatweapon.h" />
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\baseentity.h" />
     <ClInclude Include="..\..\hl2sdk-l4d2\game\server\gameinterface.h" />
     <ClInclude Include="..\..\hl2sdk-l4d2\game\server\physics.h" />
     <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\basecombatweapon_shared.h" />
     <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\physics_shared.h" />
     <ClInclude Include="..\..\hl2sdk-l4d2\public\bone_setup.h" />
     <ClInclude Include="..\..\hl2sdk-l4d2\public\studio.h" />
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\func_portal_detector.h" />
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\func_portal_orientation.h" />
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\PhysicsCloneArea.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\PortalSimulation.h" />
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_gamestats.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_physics_collisionevent.h" />
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\prop_portal.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_physcannon.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_portalbase.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_portalbasecombatweapon.h" />
@@ -96,14 +104,22 @@
     <ClInclude Include="weapon_portalgun_l4d2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\baseanimating.cpp" />
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\basecombatweapon.cpp" />
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\baseentity.cpp" />
     <ClCompile Include="..\..\hl2sdk-l4d2\game\server\gameinterface.cpp" />
     <ClCompile Include="..\..\hl2sdk-l4d2\game\server\physics.cpp" />
     <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\basecombatweapon_shared.cpp" />
     <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\physics_shared.cpp" />
     <ClCompile Include="..\..\hl2sdk-l4d2\public\bone_setup.cpp" />
     <ClCompile Include="..\..\hl2sdk-l4d2\public\studio.cpp" />
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\func_portal_detector.cpp" />
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\func_portal_orientation.cpp" />
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\PhysicsCloneArea.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\PortalSimulation.cpp" />
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_gamestats.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_physics_collisionevent.cpp" />
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\prop_portal.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_physcannon.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_portalbase.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_portalbasecombatweapon.cpp" />

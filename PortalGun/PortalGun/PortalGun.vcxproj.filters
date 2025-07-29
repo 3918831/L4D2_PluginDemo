@@ -43,6 +43,9 @@
     <Filter Include="源文件\Portal\game\server">
       <UniqueIdentifier>{4d53c199-483b-4e72-b7af-91138a8e1c2f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Portal\game\server\portal">
+      <UniqueIdentifier>{2ee913cf-2876-4e3a-b110-b900255783a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="weapon_portalgun_l4d2.h">
@@ -96,6 +99,30 @@
     <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_portalgun_shared.h">
       <Filter>源文件\Portal\Weapons</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\baseanimating.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\baseentity.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\basecombatweapon.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\prop_portal.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\PhysicsCloneArea.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\func_portal_detector.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_gamestats.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\func_portal_orientation.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo_weapon.cpp">
@@ -145,6 +172,30 @@
     </ClCompile>
     <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_portalgun_shared.cpp">
       <Filter>源文件\Portal\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\baseanimating.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\baseentity.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\basecombatweapon.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\prop_portal.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\PhysicsCloneArea.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\func_portal_detector.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_gamestats.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\func_portal_orientation.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

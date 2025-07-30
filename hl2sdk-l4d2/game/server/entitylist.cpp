@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ?1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: 
 //
@@ -1480,7 +1480,8 @@ public:
 			// Allocate a CBasePlayer for pev, and call spawn
 			if ( nPlayerIndex >= 0 )
 			{
-				edict_t *pEdict = engine->PEntityOfEntIndex( nPlayerIndex );
+				//edict_t *pEdict = engine->PEntityOfEntIndex( nPlayerIndex );
+				edict_t* pEdict = (nPlayerIndex >= 0 && nPlayerIndex < gpGlobals->maxEntities) ? (edict_t*)(gpGlobals->pEdicts + nPlayerIndex) : NULL;
 				ClientPutInServer( pEdict, "unnamed" );
 				ClientActive( pEdict, false );
 

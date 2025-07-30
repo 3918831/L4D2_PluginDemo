@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ?1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: Implements visual effects entities: sprites, beams, bubbles, etc.
 //
@@ -476,7 +476,9 @@ const Vector &CBeam::GetAbsStartPos( void ) const
 {
 	if ( GetType() == BEAM_ENTS && GetStartEntity() )
 	{
-		edict_t *pent =  engine->PEntityOfEntIndex( GetStartEntity() );
+		//edict_t *pent =  engine->PEntityOfEntIndex( GetStartEntity() );
+		auto ient = GetStartEntity();
+		edict_t* pent = (ient >= 0 && ient < gpGlobals->maxEntities) ? (edict_t*)(gpGlobals->pEdicts + ient) : NULL;
 		CBaseEntity *ent = CBaseEntity::Instance( pent );
 		if ( !ent )
 		{
@@ -492,7 +494,9 @@ const Vector &CBeam::GetAbsEndPos( void ) const
 {
 	if ( GetType() != BEAM_POINTS && GetType() != BEAM_HOSE && GetEndEntity() ) 
 	{
-		edict_t *pent =  engine->PEntityOfEntIndex( GetEndEntity() );
+		//edict_t *pent =  engine->PEntityOfEntIndex( GetEndEntity() );
+		auto ient = GetEndEntity();
+		edict_t* pent = (ient >= 0 && ient < gpGlobals->maxEntities) ? (edict_t*)(gpGlobals->pEdicts + ient) : NULL;
 		CBaseEntity *ent = CBaseEntity::Instance( pent );
 		if ( ent )
 			return ent->GetAbsOrigin();

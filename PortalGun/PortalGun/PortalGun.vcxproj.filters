@@ -123,6 +123,66 @@
     <ClInclude Include="..\..\PortalSDK\game\server\portal\func_portal_orientation.h">
       <Filter>源文件\Portal\game\server\portal</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\GameStats.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\igamesystem.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\baseentity_shared.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\public\collisionutils.h">
+      <Filter>源文件\hl2sdk-l4d2\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\util_shared.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\envmicrophone.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_basenpc.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\util.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\public\datamap.h">
+      <Filter>源文件\hl2sdk-l4d2\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\props_shared.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\takedamageinfo.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_utils.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_dynamiclink.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\entitylist.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\debugoverlay_shared.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_collideable_enumerator.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\beam_shared.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\Sprite.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\player.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\baseplayer_shared.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo_weapon.cpp">
@@ -196,6 +256,66 @@
     </ClCompile>
     <ClCompile Include="..\..\PortalSDK\game\server\portal\func_portal_orientation.cpp">
       <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\GameStats.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\igamesystem.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\SoundEmitterSystem.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\baseentity_shared.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\public\collisionutils.cpp">
+      <Filter>源文件\hl2sdk-l4d2\public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\util_shared.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\envmicrophone.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_basenpc.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\util.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\props_shared.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\takedamageinfo.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_utils.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_dynamiclink.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\entitylist.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\debugoverlay_shared.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_collideable_enumerator.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\beam_shared.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\Sprite.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\player.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\baseplayer_shared.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ====
+//========= Copyright ?1996-2005, Valve Corporation, All rights reserved. ====
 //
 // Purpose: Implements an entity that measures sound volume at a point in a map.
 //
@@ -305,7 +305,8 @@ bool CEnvMicrophone::CanHearSound( int entindex, soundlevel_t soundlevel, float 
 	CBaseEntity *pEntity = NULL;
 	if ( entindex )
 	{
-		pEntity = CBaseEntity::Instance( engine->PEntityOfEntIndex(entindex) );
+		//pEntity = CBaseEntity::Instance( engine->PEntityOfEntIndex(entindex) );
+		pEntity = CBaseEntity::Instance(entindex);
 	}
 			    
 	// Cull out sounds except from specific entities

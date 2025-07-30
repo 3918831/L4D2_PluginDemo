@@ -3733,7 +3733,7 @@ bool CAI_BaseNPC::PreNPCThink()
 		}
 
 		DbgFrameLimitMsg( "Running %d (%d)\n", this, gpGlobals->framecount );
-		g_StartTimeCurThink = engine->Time();
+		g_StartTimeCurThink = engine->OBSOLETE_Time();
 
 		m_iFrameBlocked = -1;
 		m_nLastThinkTick = TIME_TO_TICKS( m_flLastRealThinkTime );
@@ -3746,7 +3746,7 @@ void CAI_BaseNPC::PostNPCThink( void )
 { 
 	if ( g_StartTimeCurThink != 0.0 && VCRGetMode() == VCR_Disabled )
 	{
-		g_NpcTimeThisFrame += engine->Time() - g_StartTimeCurThink;
+		g_NpcTimeThisFrame += engine->OBSOLETE_Time() - g_StartTimeCurThink;
 	}
 }
 

@@ -1,4 +1,4 @@
-//===== Copyright © 1996-2005, Valve Corporation, All rights reserved. ======//
+//===== Copyright ?1996-2005, Valve Corporation, All rights reserved. ======//
 //
 // Purpose: Functions dealing with the player.
 //
@@ -6050,7 +6050,8 @@ void CBasePlayer::CheatImpulseCommands( int iImpulse )
 		{
 			trace_t tr;
 
-			edict_t		*pWorld = engine->PEntityOfEntIndex( 0 );
+			//edict_t		*pWorld = engine->PEntityOfEntIndex( 0 );
+			edict_t* pWorld = (edict_t*)(gpGlobals->pEdicts);
 
 			Vector start = EyePosition();
 			Vector forward;

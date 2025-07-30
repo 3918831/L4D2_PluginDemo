@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ?1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: Utility code.
 //
@@ -2106,7 +2106,8 @@ static int UTIL_GetNewCheckClient( int check )
 			i = 1;
 		}
 
-		ent = engine->PEntityOfEntIndex( i );
+		//ent = engine->PEntityOfEntIndex( i );
+		ent = (i >= 0 && i < gpGlobals->maxEntities) ? (edict_t*)(gpGlobals->pEdicts + i) : NULL;
 		if ( !ent )
 			continue;
 
@@ -2171,7 +2172,8 @@ static edict_t *UTIL_GetCurrentCheckClient()
 	}
 
 	// return check if it might be visible	
-	ent = engine->PEntityOfEntIndex( g_CheckClient.m_lastcheck );
+	//ent = engine->PEntityOfEntIndex( g_CheckClient.m_lastcheck );
+	ent = (g_CheckClient.m_lastcheck >= 0 && g_CheckClient.m_lastcheck < gpGlobals->maxEntities) ? (edict_t*)(gpGlobals->pEdicts + g_CheckClient.m_lastcheck) : NULL;
 
 	// Allow dead clients -- JAY
 	// Our monsters know the difference, and this function gates alot of behavior
@@ -3225,7 +3227,7 @@ void CC_CollisionTest( const CCommand &args )
 	int nMask = MASK_ALL & ~(CONTENTS_MONSTER | CONTENTS_HITBOX );
 	for ( int j = 0; j < 2; j++ )
 	{
-		float startTime = engine->Time();
+		float startTime = engine->OBSOLETE_Time();
 		if ( testType == 1 )
 		{
 			trace_t tr;
@@ -3255,7 +3257,7 @@ void CC_CollisionTest( const CCommand &args )
 			}
 		}
 
-		duration += engine->Time() - startTime;
+		duration += engine->OBSOLETE_Time() - startTime;
 	}
 	test[testType] = duration;
 	Msg("%d collisions in %.2f ms (%u dots)\n", NUM_COLLISION_TESTS, duration*1000, dots );

@@ -19,3 +19,6 @@
 14. IServerGameClients类四个纯虚接口缺少实现:ClientVoice、GetMaxSplitscreenPlayers、GetMaxHumanPlayers、ClientCommandKeyValues，分别生成空实现或者默认返回
 15. src\game\server\portal\PortalSimulation.cpp中CPSCollisionEntity::Spawn存在对IncrementInterpolationFrame的调用, 暂且注释
 16. src\game\server\gameinterface.cpp::UserMessageBegin方法缺少一个参数,已修复
+
+## 2025.7.30:
+17. engine->PEntityOfEntIndex(i)等价替代为:(i >= 0 && i < gpGlobals->maxEntities) ? (edict_t*)(gpGlobals->pEdicts + i) : NULL;

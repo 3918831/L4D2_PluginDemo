@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ?1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: Implements shared baseplayer class functionality
 //
@@ -597,7 +597,10 @@ void CBasePlayer::PlayStepSound( Vector &vecOrigin, surfacedata_t *psurface, flo
 		return;
 
 	int nSide = m_Local.m_nStepside;
-	unsigned short stepSoundName = nSide ? psurface->sounds.stepleft : psurface->sounds.stepright;
+	// ¡°stepleft¡±: ²»ÊÇ¡°surfacesoundnames_t¡±µÄ³ÉÔ±, ¡°stepright¡±: ²»ÊÇ¡°surfacesoundnames_t¡±µÄ³ÉÔ±
+	// ¸ù¾Ýº¯ÊýµÄ×÷ÓÃ, ÏÂÃæµÄ´úÂëÏÈ²»Ö´ÐÐ
+	//unsigned short stepSoundName = nSide ? psurface->sounds.stepleft : psurface->sounds.stepright;
+	unsigned short stepSoundName = 0;
 	if ( !stepSoundName )
 		return;
 

@@ -22,3 +22,6 @@
 
 ## 2025.7.30:
 17. engine->PEntityOfEntIndex(i)等价替代为:(i >= 0 && i < gpGlobals->maxEntities) ? (edict_t*)(gpGlobals->pEdicts + i) : NULL;
+
+## 2025.8.1:
+18. 以src\game\server\portal\portal_player.cpp为例，对Studio_BuildMatrices函数的调用需要注释掉倒数第三个float参数，才能与函数签名匹配：调用方在PortalSDK，函数定义在l4d2sdk（src\public\bone_setup.cpp）

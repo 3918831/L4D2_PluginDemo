@@ -1,5 +1,5 @@
 #include "demo_weapon.h"
-#include "in_buttons.h"
+//#include "in_buttons.h"
 #include "game/server/iplayerinfo.h"
 
 //extern IPlayerInfoManager* playerinfomanager;

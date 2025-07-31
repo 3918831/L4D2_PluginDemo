@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ?1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose:	Player for Portal.
 //
@@ -33,6 +33,7 @@
 #include "soundenvelope.h"
 #include "ai_speech.h"		// For expressors, vcd playing
 #include "sceneentity.h"	// has the VCD precache function
+#include "valve_minmax_on.h"
 
 // Max mass the player can lift with +use
 #define PORTAL_PLAYER_MAX_LIFT_MASS 85
@@ -488,7 +489,8 @@ void CPortal_Player::SetPlayerModel(void)
 	const char* szModelName = NULL;
 	const char* pszCurrentModelName = modelinfo->GetModelName(GetModel());
 
-	szModelName = engine->GetClientConVarValue(engine->IndexOfEdict(edict()), "cl_playermodel");
+	//szModelName = engine->GetClientConVarValue(engine->IndexOfEdict(edict()), "cl_playermodel");
+	szModelName = engine->GetClientConVarValue((int)(edict() - gpGlobals->pEdicts), "cl_playermodel");
 
 	if (ValidatePlayerModel(szModelName) == false)
 	{
@@ -990,7 +992,7 @@ void CPortal_Player::SetupBones(matrix3x4_t* pBoneToWorld, int boneMask)
 		pos,
 		q,
 		-1,
-		1.0f,
+		/*1.0f,*/
 		pBoneToWorld,
 		boneMask);
 }

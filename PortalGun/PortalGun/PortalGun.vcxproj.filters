@@ -183,6 +183,12 @@
     <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\baseplayer_shared.h">
       <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_player.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_placement.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo_weapon.cpp">
@@ -316,6 +322,12 @@
     </ClCompile>
     <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\baseplayer_shared.cpp">
       <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_player.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_placement.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

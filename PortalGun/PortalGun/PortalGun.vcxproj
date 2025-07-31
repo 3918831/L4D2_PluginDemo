@@ -62,7 +62,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_WIN32;NDEBUG;L4D2PLUGINDEMO_EXPORTS;_WINDOWS;_USRDLL;GAME_DLL;PORTAL;HL2_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)hl2sdk-l4d2\public;$(SolutionDir)hl2sdk-l4d2\public\tier0;$(SolutionDir)hl2sdk-l4d2\public\tier1;$(SolutionDir)hl2sdk-l4d2\public\tier2;$(SolutionDir)hl2sdk-l4d2\public\tier3;$(SolutionDir)hl2sdk-l4d2\game;$(SolutionDir)hl2sdk-l4d2\game\server;$(SolutionDir)hl2sdk-l4d2\game\server\hl2;$(SolutionDir)hl2sdk-l4d2\game\shared;$(SolutionDir)hl2sdk-l4d2\common;$(SolutionDir)PortalSDK\public;$(SolutionDir)PortalSDK\game\server;$(SolutionDir)PortalSDK\game\server\portal;$(SolutionDir)PortalSDK\game\server\hl2;$(SolutionDir)PortalSDK\game\shared;$(SolutionDir)PortalSDK\game\shared\portal;$(SolutionDir)PortalSDK\game\shared\hl2;$(SolutionDir)PortalSDK\game\shared\Multiplayer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)hl2sdk-l4d2\public;$(SolutionDir)hl2sdk-l4d2\public\tier0;$(SolutionDir)hl2sdk-l4d2\public\tier1;$(SolutionDir)hl2sdk-l4d2\public\tier2;$(SolutionDir)hl2sdk-l4d2\public\tier3;$(SolutionDir)hl2sdk-l4d2\game;$(SolutionDir)hl2sdk-l4d2\game\server;$(SolutionDir)hl2sdk-l4d2\game\server\hl2;$(SolutionDir)hl2sdk-l4d2\game\shared;$(SolutionDir)hl2sdk-l4d2\common;$(SolutionDir)PortalSDK\public;$(SolutionDir)PortalSDK\public\tier0;$(SolutionDir)PortalSDK\game\server;$(SolutionDir)PortalSDK\game\server\portal;$(SolutionDir)PortalSDK\game\server\hl2;$(SolutionDir)PortalSDK\game\shared;$(SolutionDir)PortalSDK\game\shared\portal;$(SolutionDir)PortalSDK\game\shared\hl2;$(SolutionDir)PortalSDK\game\shared\Multiplayer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>weapon_portalgun_l4d2.h</PrecompiledHeaderFile>
       <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -112,6 +112,8 @@
     <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_collideable_enumerator.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_gamestats.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_physics_collisionevent.h" />
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_placement.h" />
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_player.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\prop_portal.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_physcannon.h" />
     <ClInclude Include="..\..\PortalSDK\game\server\portal\weapon_portalbase.h" />
@@ -159,6 +161,8 @@
     <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_collideable_enumerator.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_gamestats.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_physics_collisionevent.cpp" />
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_placement.cpp" />
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_player.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\prop_portal.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_physcannon.cpp" />
     <ClCompile Include="..\..\PortalSDK\game\server\portal\weapon_portalbase.cpp" />

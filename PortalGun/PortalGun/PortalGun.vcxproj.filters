@@ -46,6 +46,12 @@
     <Filter Include="源文件\Portal\game\server\portal">
       <UniqueIdentifier>{2ee913cf-2876-4e3a-b110-b900255783a3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Portal\public">
+      <UniqueIdentifier>{cec85a0b-037f-4311-8cb1-56bc1741d14f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Portal\public\haptics">
+      <UniqueIdentifier>{afd58fa0-c47b-43cb-a91f-6cdd5ecfc282}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="weapon_portalgun_l4d2.h">
@@ -189,6 +195,12 @@
     <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_placement.h">
       <Filter>源文件\Portal\game\server\portal</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\player_pickup.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\public\haptics\haptic_utils.h">
+      <Filter>源文件\Portal\public\haptics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo_weapon.cpp">
@@ -328,6 +340,12 @@
     </ClCompile>
     <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_placement.cpp">
       <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\player_pickup.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\public\haptics\haptic_utils.cpp">
+      <Filter>源文件\Portal\public\haptics</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

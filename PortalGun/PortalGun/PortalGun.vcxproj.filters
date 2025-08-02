@@ -52,6 +52,12 @@
     <Filter Include="源文件\Portal\public\haptics">
       <UniqueIdentifier>{afd58fa0-c47b-43cb-a91f-6cdd5ecfc282}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\hl2sdk-l4d2\game\server\hl2">
+      <UniqueIdentifier>{a9821390-196f-45c9-aac7-5f56b5d6e5f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\hl2sdk-l4d2\game\shared\Multiplayer">
+      <UniqueIdentifier>{47c94a4a-5acd-4dc7-bf4b-97359f6f51f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="weapon_portalgun_l4d2.h">
@@ -201,6 +207,123 @@
     <ClInclude Include="..\..\PortalSDK\public\haptics\haptic_utils.h">
       <Filter>源文件\Portal\public\haptics</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Github_Project\source-sdk-2013-ce\mp\src\public\haptics\haptic_msgs.h">
+      <Filter>源文件\Portal\public\haptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\hl2\prop_combine_ball.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server\hl2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\hl2\hl2_player.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server\hl2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\basetempentity.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ServerNetworkProperty.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\physicsshadowclone.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\physobj.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\ammodef.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\timedeventmgr.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_player_shared.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\physics_bone_follower.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\hl2\env_speaker.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server\hl2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\basecombatcharacter.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortalSDK\game\server\portal\portal_playeranimstate.h">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\Multiplayer\multiplayer_animstate.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared\Multiplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\scripted.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\baseflex.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\BaseAnimatingOverlay.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\recipientfilter.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\usermessages.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\soundent.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_moveshoot.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_hint.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_localnavigator.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\shared\collisionproperty.h">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\public\dt_send.h">
+      <Filter>源文件\hl2sdk-l4d2\public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\AI_Criteria.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_senses.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_navigator.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_squad.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\cbase.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_moveprobe.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_pathfinder.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_node.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_motor.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_squadslot.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_default.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\ai_route.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hl2sdk-l4d2\game\server\filters.h">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo_weapon.cpp">
@@ -346,6 +469,144 @@
     </ClCompile>
     <ClCompile Include="..\..\PortalSDK\public\haptics\haptic_utils.cpp">
       <Filter>源文件\Portal\public\haptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Github_Project\source-sdk-2013-ce\mp\src\public\haptics\haptic_msgs.cpp">
+      <Filter>源文件\Portal\public\haptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\props.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\hl2\prop_combine_ball.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server\hl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\hl2\hl2_player.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server\hl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\basetempentity.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ServerNetworkProperty.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\physicsshadowclone.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\physobj.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\ammodef.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\timedeventmgr.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_player_shared.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\physics_bone_follower.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\hl2\env_speaker.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server\hl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\physics_main_shared.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\physics_main.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\basecombatcharacter.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortalSDK\game\server\portal\portal_playeranimstate.cpp">
+      <Filter>源文件\Portal\game\server\portal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\Multiplayer\multiplayer_animstate.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\scripted.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\baseflex.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\BaseAnimatingOverlay.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\recipientfilter.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\subs.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\usermessages.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\soundent.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_moveshoot.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_hint.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_localnavigator.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\shared\collisionproperty.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\public\dt_send.cpp">
+      <Filter>源文件\hl2sdk-l4d2\public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\AI_Criteria.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_senses.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_navigator.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_squad.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\cbase.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_moveprobe.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_pathfinder.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_node.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_motor.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_basenpc_schedule.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_squadslot.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_basenpc_squad.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_basenpc_movement.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_default.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\ai_route.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hl2sdk-l4d2\game\server\filters.cpp">
+      <Filter>源文件\hl2sdk-l4d2\game\server</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

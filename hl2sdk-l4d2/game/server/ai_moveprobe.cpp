@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ?1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose:
 //
@@ -159,7 +159,8 @@ void CAI_MoveProbe::TraceHull(
 		enginetrace->TraceRay( ray, mask, &traceFilter, pResult );
 	else
 	{
-		enginetrace->TraceRayAgainstLeafAndEntityList( ray, *(const_cast<CAI_MoveProbe *>(this)->m_pTraceListData), mask, &traceFilter, pResult );
+		//Jonah_xia:µÚ¶þ¸öÈë²ÎÔÚl4d2sdkºÍsourcesdk 2013ÓÐ²îÒì£¬µ«ÊÇÖ»ÓÐÒ»´¦µ÷ÓÃ£¬ÏÈÆÁ±ÎµôÔÙËµ£»
+		//enginetrace->TraceRayAgainstLeafAndEntityList( ray, *(const_cast<CAI_MoveProbe *>(this)->m_pTraceListData), mask, &traceFilter, pResult );
 #if 0
 		trace_t verificationTrace;
 		enginetrace->TraceRay( ray, mask, &traceFilter, &verificationTrace );
@@ -221,7 +222,8 @@ void CAI_MoveProbe::SetupCheckStepTraceListData( const CheckStepArgs_t &args ) c
 		{
 			const_cast<CAI_MoveProbe *>(this)->m_pTraceListData = new CTraceListData;
 		}
-		enginetrace->SetupLeafAndEntityListRay( ray, *(const_cast<CAI_MoveProbe *>(this)->m_pTraceListData) );
+		//Jonah_xia:µÚ¶þ¸öÈë²ÎÔÚl4d2sdkºÍsourcesdk 2013ÓÐ²îÒì£¬µ«ÊÇÖ»ÓÐÒ»´¦µ÷ÓÃ£¬ÏÈÆÁ±ÎµôÔÙËµ£»
+		//enginetrace->SetupLeafAndEntityListRay( ray, *(const_cast<CAI_MoveProbe *>(this)->m_pTraceListData) );
 	}
 }
 

@@ -25,3 +25,7 @@
 
 ## 2025.8.1:
 18. 以src\game\server\portal\portal_player.cpp为例，对Studio_BuildMatrices函数的调用需要注释掉倒数第三个float参数，才能与函数签名匹配：调用方在PortalSDK，函数定义在l4d2sdk（src\public\bone_setup.cpp）
+
+## 2025.8.3：
+19. l4d2sdk没有HasHaptics和SetHaptics方法和m_bhasHaptics属性,初步判断与触控设备相关，先删了；
+20. src\public\engine\IEngineTrace.h::TraceRayAgainstLeafAndEntityList的第二个入参在l4d2sdk和sourcesdk 2013有差异，但是只有一处调用，先屏蔽掉再说；

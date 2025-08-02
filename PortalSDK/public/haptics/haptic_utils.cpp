@@ -282,8 +282,9 @@ void UpdateAvatarEffect(void)
 void HapticsDamage(CBasePlayer* pPlayer, const CTakeDamageInfo &info)
 {
 #if !defined(TF_DLL) && !defined(CSTRIKE_DLL)
-	if(!pPlayer->HasHaptics())
-		return;// do not send to non haptic users.
+	//Jonah_xia:2025.8.3: l4d2sdk没有HasHaptics和SetHaptics方法和m_bhasHaptics属性,初步判断与触控设备相关，先删了
+	//if(!pPlayer->HasHaptics())
+	//	return;// do not send to non haptic users.
 
 	Vector DamageDirection(0,0,0);
 	CBaseEntity *eInflictor = info.GetInflictor();
